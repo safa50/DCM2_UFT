@@ -10,6 +10,7 @@ AIUtil("button", "", micWithAnchorBelow, AIUtil.FindTextBlock("Personnel Files")
 AIUtil.FindTextBlock("Request Forms", micFromRight, 1).Click
 'wait 2
 Browser("creationtime:=0").Sync
+wait 5
 AIUtil("plus").Click
 AIUtil.FindText("Add", micFromTop, 1).Click
 AIUtil.SetContext Browser("creationtime:=0")
